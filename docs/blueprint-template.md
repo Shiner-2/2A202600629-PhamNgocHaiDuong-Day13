@@ -67,6 +67,7 @@
   - Demo & Report: Completed blueprint report, validated logging output, confirmed 100/100 test score
 
 - [EVIDENCE_LINK]: 
+  - Commit `1b5f871` (`feat: finish observability lab with live Langfuse evidence`)
   - app/middleware.py (Correlation ID implementation)
   - app/logging_config.py (PII scrubbing enabled)
   - app/main.py (Request enrichment with contextvars)
