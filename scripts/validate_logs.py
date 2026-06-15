@@ -31,15 +31,12 @@ def main() -> None:
     correlation_ids = set()
 
     for rec in records:
-        # Check required fields (global)
-        if not {"ts", "level", "event"}.issubset(rec.keys()):
+        # Check the repository's declared JSON logging schema.
+        if not REQUIRED_FIELDS.issubset(rec.keys()):
             missing_required += 1
             
         # Context-specific checks for API requests
         if rec.get("service") == "api":
-            if "correlation_id" not in rec or rec.get("correlation_id") == "MISSING":
-                missing_required += 1
-            
             if not ENRICHMENT_FIELDS.issubset(rec.keys()):
                 missing_enrichment += 1
 

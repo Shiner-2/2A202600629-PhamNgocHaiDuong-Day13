@@ -1,0 +1,309 @@
+{
+  "generated_at": "2026-06-15T08:30:23.976080+00:00",
+  "request_count": 15,
+  "langfuse_trace_count": 15,
+  "metrics": {
+    "traffic": 15,
+    "total_requests": 15,
+    "latency_p50": 151.0,
+    "latency_p95": 152.0,
+    "latency_p99": 152.0,
+    "avg_cost_usd": 0.0005,
+    "total_cost_usd": 0.0079,
+    "tokens_in_total": 572,
+    "tokens_out_total": 413,
+    "error_breakdown": {},
+    "error_rate_pct": 0.0,
+    "quality_avg": 0.8667
+  },
+  "selected_trace_id": "32591d8f2fdf27f89dc856b06c07e854",
+  "selected_trace_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/32591d8f2fdf27f89dc856b06c07e854",
+  "observations": [],
+  "traces": [
+    {
+      "id": "32591d8f2fdf27f89dc856b06c07e854",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:07.510000+00:00",
+      "session_id": "s05-run-15",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-15",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/32591d8f2fdf27f89dc856b06c07e854"
+    },
+    {
+      "id": "cb1490ce1f5596eca808bacc02e7ea20",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:07.352000+00:00",
+      "session_id": "s04-run-14",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-14",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/cb1490ce1f5596eca808bacc02e7ea20"
+    },
+    {
+      "id": "448e3b95ba6c934566588aaa4441ab95",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:07.195000+00:00",
+      "session_id": "s03-run-13",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "summary"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-13",
+        "feature": "summary",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/448e3b95ba6c934566588aaa4441ab95"
+    },
+    {
+      "id": "3e6d096e1498775ff99d02031603d86b",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:07.030000+00:00",
+      "session_id": "s02-run-12",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-12",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/3e6d096e1498775ff99d02031603d86b"
+    },
+    {
+      "id": "e920b20a29a6084dffb515d9d6e9d445",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:06.879000+00:00",
+      "session_id": "s01-run-11",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-11",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/e920b20a29a6084dffb515d9d6e9d445"
+    },
+    {
+      "id": "fda8a90ed69ee3e776ea6f4df0315322",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:06.720000+00:00",
+      "session_id": "s10-run-10",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-10",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/fda8a90ed69ee3e776ea6f4df0315322"
+    },
+    {
+      "id": "4ef84ee60c0e3b0a77d938158110ef9e",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:06.562000+00:00",
+      "session_id": "s09-run-09",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-09",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/4ef84ee60c0e3b0a77d938158110ef9e"
+    },
+    {
+      "id": "775ee914634699c8b3a8ea7a7c85cce2",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:06.402000+00:00",
+      "session_id": "s08-run-08",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-08",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/775ee914634699c8b3a8ea7a7c85cce2"
+    },
+    {
+      "id": "acfb1f79e13328f5d136383b845caef3",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:06.243000+00:00",
+      "session_id": "s07-run-07",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-07",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/acfb1f79e13328f5d136383b845caef3"
+    },
+    {
+      "id": "f3740ecc9734a46e3f554a6a256c698c",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:06.086000+00:00",
+      "session_id": "s06-run-06",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "summary"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-06",
+        "feature": "summary",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/f3740ecc9734a46e3f554a6a256c698c"
+    },
+    {
+      "id": "7ee286568f6c31a1f6521aa20419568d",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:05.930000+00:00",
+      "session_id": "s05-run-05",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-05",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/7ee286568f6c31a1f6521aa20419568d"
+    },
+    {
+      "id": "c37457a79b824fba89bf53952a81a7a2",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:05.772000+00:00",
+      "session_id": "s04-run-04",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-04",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/c37457a79b824fba89bf53952a81a7a2"
+    },
+    {
+      "id": "650121291525d755ceea1c73b78bc520",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:05.615000+00:00",
+      "session_id": "s03-run-03",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "summary"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-03",
+        "feature": "summary",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/650121291525d755ceea1c73b78bc520"
+    },
+    {
+      "id": "ff53f95095044fdbf3add1a44f560023",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:05.450000+00:00",
+      "session_id": "s02-run-02",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-02",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/ff53f95095044fdbf3add1a44f560023"
+    },
+    {
+      "id": "0e7e701b0b7a714ef57e3fde0aef8fa7",
+      "name": "agent.run",
+      "timestamp": "2026-06-15T08:30:05.296000+00:00",
+      "session_id": "s01-run-01",
+      "latency_seconds": 0.0,
+      "total_cost_usd": 0.0,
+      "tags": [
+        "claude-sonnet-4-5",
+        "lab",
+        "qa"
+      ],
+      "metadata": {
+        "correlation_id": "req-evidence-01",
+        "feature": "qa",
+        "model": "claude-sonnet-4-5"
+      },
+      "html_path": "/project/cmqexsypt0796ad0cx3d25uj4/traces/0e7e701b0b7a714ef57e3fde0aef8fa7"
+    }
+  ]
+}

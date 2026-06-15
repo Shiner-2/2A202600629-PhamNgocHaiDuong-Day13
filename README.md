@@ -1,6 +1,6 @@
-# Day 13 Observability Lab Template
+# Day 13 Observability Lab
 
-Template repo for a 4-hour hands-on lab on Monitoring, Logging, and Observability.
+Completed implementation for the Day 13 hands-on lab on Monitoring, Logging, and Observability.
 
 ## What students will build
 
@@ -12,9 +12,9 @@ A small FastAPI "agent" instrumented with:
 - minimal metrics aggregation
 - SLOs, alerts, and a blueprint report
 
-This template is intentionally incomplete. Teams are expected to finish TODOs during the lab.
+The app includes structured logging, PII protection, Langfuse tracing, metrics, incident injection, and a live dashboard.
 
-## Suggested lab flow (Gapped Template)
+## Verification flow
 
 1. **Run the starter app**: Observe that logs are basic and correlation IDs are missing.
 2. **Implement Correlation IDs**: Fix `app/middleware.py` so every request has a unique `x-request-id`.
@@ -35,6 +35,8 @@ cp .env.example .env
 uvicorn app.main:app --reload
 ```
 
+Open the live six-panel dashboard at `http://127.0.0.1:8000/dashboard`.
+
 ## Tooling
 
 ```bash
@@ -46,6 +48,9 @@ python scripts/inject_incident.py --scenario rag_slow
 
 # Check your implementation progress
 python scripts/validate_logs.py
+
+# Generate 15 live Langfuse traces and reproducible evidence files
+python scripts/generate_evidence.py
 ```
 
 ## Repo map
@@ -108,6 +113,6 @@ Your final grade is calculated as follows:
    - **Git Evidence (20 pts)**: Traceable work via commits and code ownership.
 
 **Passing Criteria**: 
-- All `TODO` blocks must be completed.
+- The implementation must not contain unfinished task blocks.
 - Minimum of 10 traces must be visible in Langfuse.
 - Dashboard must show all 6 required panels.

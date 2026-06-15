@@ -5,9 +5,9 @@ import re
 
 PII_PATTERNS: dict[str, str] = {
     "email": r"[\w\.-]+@[\w\.-]+\.\w+",
-    "phone_vn": r"(?:\+84|0)[ \.-]?\d{3}[ \.-]?\d{3}[ \.-]?\d{3,4}", # Matches 090 123 4567, 090.123.4567, etc.
+    "credit_card": r"(?:\b\d{16}\b|\b\d{4}([ -])\d{4}\1\d{4}\1\d{4}\b)",
     "cccd": r"\b\d{12}\b",
-    "credit_card": r"\b\d{4}[- ]?\d{4}[- ]?\d{4}[- ]?\d{4}\b",
+    "phone_vn": r"(?:\+84|0)[ \.-]?\d{3}[ \.-]?\d{3}[ \.-]?\d{3,4}",
     "passport": r"\b[A-Z]{1,2}\d{6,9}\b",
     "ip_address": r"\b(?:\d{1,3}\.){3}\d{1,3}\b",
     "ssn": r"\b\d{3}-\d{2}-\d{4}\b",

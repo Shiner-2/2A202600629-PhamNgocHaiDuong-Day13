@@ -1,48 +1,55 @@
 from __future__ import annotations
 
 import os
-from typing import Any
+from pathlib import Path
+from typing import Any, Callable
+
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
 try:
-    from langfuse import Langfuse, observe
-    
-    # Initialize Langfuse client
-    langfuse_client = Langfuse()
-    
-    # Create a simple context wrapper to match the expected API
-    class LangfuseContextWrapper:
-        def __init__(self, client: Langfuse):
-            self.client = client
-        
-        def update_current_trace(self, **kwargs: Any) -> None:
-            try:
-                self.client.update_current_trace(**kwargs)
-            except Exception:
-                pass
-        
-        def update_current_observation(self, **kwargs: Any) -> None:
-            try:
-                self.client.update_current_observation(**kwargs)
-            except Exception:
-                pass
-    
-    langfuse_context = LangfuseContextWrapper(langfuse_client)
-    
-except Exception:  # pragma: no cover
-    def observe(*args: Any, **kwargs: Any):
-        def decorator(func):
+    from langfuse import get_client, observe
+
+    langfuse_client = get_client()
+except Exception:  # pragma: no cover - keeps the lab runnable without Langfuse
+    langfuse_client = None
+
+    def observe(*args: Any, **kwargs: Any) -> Callable:
+        def decorator(func: Callable) -> Callable:
             return func
+
         return decorator
-
-    class _DummyContext:
-        def update_current_trace(self, **kwargs: Any) -> None:
-            return None
-
-        def update_current_observation(self, **kwargs: Any) -> None:
-            return None
-
-    langfuse_context = _DummyContext()
 
 
 def tracing_enabled() -> bool:
-    return bool(os.getenv("LANGFUSE_PUBLIC_KEY") and os.getenv("LANGFUSE_SECRET_KEY"))
+    return bool(
+        langfuse_client
+        and os.getenv("LANGFUSE_PUBLIC_KEY")
+        and os.getenv("LANGFUSE_SECRET_KEY")
+    )
+
+
+def update_current_trace(**kwargs: Any) -> None:
+    if tracing_enabled():
+        langfuse_client.update_current_trace(**kwargs)
+
+
+def update_current_span(**kwargs: Any) -> None:
+    if tracing_enabled():
+        langfuse_client.update_current_span(**kwargs)
+
+
+def update_current_generation(**kwargs: Any) -> None:
+    if tracing_enabled():
+        langfuse_client.update_current_generation(**kwargs)
+
+
+def score_current_trace(name: str, value: float) -> None:
+    if tracing_enabled():
+        langfuse_client.score_current_trace(name=name, value=value)
+
+
+def flush_traces() -> None:
+    if tracing_enabled():
+        langfuse_client.flush()
